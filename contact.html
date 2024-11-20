@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Personalberater</h1>
+      <nav>
+        <a href="index.html" class="px-4">Home</a>
+        <a href="contact.html" class="px-4">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Kontaktformular -->
+  <section class="py-20">
+    <div class="container mx-auto max-w-lg bg-white p-8 shadow rounded">
+      <h2 class="text-3xl font-bold mb-6 text-center">Kontaktieren Sie uns</h2>
+      <form action="https://formspree.io/f/xdkoddbe" method="POST" class="space-y-4">
+        <div>
+          <label for="name" class="block text-sm font-medium">Ihr Name</label>
+          <input type="text" name="name" id="name" class="w-full mt-1 p-2 border rounded" required>
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium">Ihre E-Mail</label>
+          <input type="email" name="email" id="email" class="w-full mt-1 p-2 border rounded" required>
+        </div>
+        <div>
+          <label for="message" class="block text-sm font-medium">Nachricht</label>
+          <textarea name="message" id="message" class="w-full mt-1 p-2 border rounded" rows="4"></textarea>
+        </div>
+        <button type="submit" class="w-full py-2 bg-blue-600 text-white rounded shadow">Absenden</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Personalberater. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
